@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Black Flash Era</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1 class="logo">
+        BLACK FLASH ERA
+    </h1>
+
+</header>
+
+<!-- DEPTH -->
+
+<div class="depth-menu">
+
+    <button class="depth-btn active" onclick="showPage('character-page', this)">
+        캐릭터 정보
+    </button>
+
+    <button class="depth-btn" onclick="showPage('tier-page', this)">
+        티어리스트
+    </button>
+
+</div>
+
+<!-- CHARACTER PAGE -->
+
+<div class="page active" id="character-page">
+
+    <!-- 자동 생성 -->
+    <div class="character-grid" id="characterGrid"></div>
+
+</div>
+
+<!-- TIER PAGE -->
+
+<div class="page" id="tier-page">
+
+    <!-- ROLE FILTER -->
+
+    <div class="role-filter" id="roleFilter">
+
+        <button class="role-btn active"
+        onclick="filterRole('all', this)">
+            전체
+        </button>
+
+        <button class="role-btn"
+        onclick="filterRole('aoe', this)">
+            격투딜러
+        </button>
+
+        <button class="role-btn"
+        onclick="filterRole('single', this)">
+            술사딜러
+        </button>
+
+        <button class="role-btn"
+        onclick="filterRole('tank', this)">
+            탱커
+        </button>
+
+        <button class="role-btn"
+        onclick="filterRole('healer', this)">
+            힐러
+        </button>
+
+        <button class="role-btn"
+        onclick="filterRole('support', this)">
+            서포터
+        </button>
+
+    </div>
+
+    <!-- 자동 생성 -->
+    <div id="tierContainer"></div>
+
+</div>
+
+<!-- POPUP -->
+
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+
+        <div class="close-btn" onclick="closePopup()">
+            ×
+        </div>
+
+        <img class="popup-image" id="popup-image">
+
+        <div class="popup-body">
+
+            <!-- ❌ 이름 영역 완전 삭제 -->
+            <!-- <div class="popup-title" id="popup-title"></div> -->
+
+            <div class="skill-grid" id="popup-skills"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
