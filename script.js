@@ -56,7 +56,7 @@ const characters = [
         ['허식 자','광역 고정 피해'],
         ['창','다단 히트 공격'],
         ['자동 술식','피해 제한'],
-        ['','자가 회복'],
+        ['수정중','자가 회복'],
         ['무하한','방어 무시']
     ]
 },
@@ -72,10 +72,38 @@ const characters = [
     badge:'ur',
     badgeText:'UR',
     skills:[
-        ['',''],
-        ['',''],
-        ['',''],
-        ['','']
+        ['[특성] 신성 각성',
+         `<span class="level-text">레벨 1 :</span> 전투 중 매초 <span class="effect-buff">신성</span>을 1스택 획득합니다.<br><span class="effect-buff">신성</span>이 20스 택에 도달하면 영역 전개: 무량공처를 발동하고 부유 상태가 됩니다.<br>영역은 전투 종료 시까지 지속됩니다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 스택당 <span class="effect-buff">신성</span>이 증가하는 스킬 피해량이 1.5%로 증가 합니다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 스택당 <span class="effect-buff">신성</span>이 증가하는 스킬 피해량이 2%로 증가합니다.
+         <br><br>
+         <span class="level-text">레벨 4 :</span> 전투 시작 시 <span class="effect-buff">신성</span> 20중첩을 획득합니다.
+         <br><br><hr><br>
+         <span class="effect-buff">신성</span> 스택당 스킬 피해가 1% 증가합니다. 최대50회 중첩됩니다. 전투 종료 시까지 지속 됩니다. 해제되지 않습니다.`],
+        ['[스킬 1] 무량공처 전역박탈',
+         `<span class="level-text">레벨 1 :</span> 영역을 전개하여, 전장의 적에게 7회 80% 공격력의 물리 피해를 입히고, 영역전개 상태에 있을 때, 자신 에게 5겹 <span class="effect-buff">신성</span>이 있을 때마다 1회 피해를 추가로 입 힙니다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 영역전개가 회수될 때, 각각 1회 100% 공격력의 고 정 피해를 추가로 입히고 적을 넉다운시킵니다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 단일 기본 피해량이 공격력의 100%로 증가합니다.`],
+        ['[스킬 2] 주술•창',
+         `<span class="level-text">레벨 1 :</span> 적의 뒤에 나타나 대상에게 3회 80% 공격력의 물리 피해를 입히고, 영역전개 상태에 있을 때, 자신에게 20겹 신성이 있을 때마다 1개 대상을 추가로 증가합니다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 단일 피해량이 공격력 120%로 증가한다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 해당 스킬은 50% 기본 치명타 확률이 존재합니다`],
+        ['[스킬 3] 역대 최강',
+         `<span class="level-text">레벨 1 :</span> HP 20% 증가, 공격력 40% 증가
+         <br><br>
+         <span class="level-text">레벨 2 :</span> HP 30% 증가, 공격력 60% 증가
+         <br><br>
+         <span class="level-text">레벨 3 :</span> HP 40% 증가, 공격력 80% 증가`],
+        ['[스킬 4] 허식•자',
+         `<span class="level-text">레벨 1 :</span> 전방에 발사하여, 경로상의 적들에게 180% 공격력 의 피해를 입히고, 영역전개 상태에 있을때, 자신에게 10겹 <span class="effect-buff">신성</span>이 있을 때마다 적을 1초 동안 기절시키며, 최대 5초 지속됩니다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 피해량이 공격력 240%로 증가한다.`]
     ]
 },
 /* =========================
@@ -125,7 +153,7 @@ const characters = [
     name:'죠고',
     tier:'S',
     role:'single',
-    singleTierId:1,
+    singleTierId:2,
     image:'https://i.imgur.com/HC7aiYP.jpeg',
     popupImage:'https://i.imgur.com/30vlflV.jpeg',
     badge:'core',
@@ -505,7 +533,7 @@ const characters = [
         ['',''],
         ['','']
     ]
-},
+}, 
 {
     id:25,
     tierId:25,
@@ -528,17 +556,46 @@ const characters = [
     id:13,
     tierId:13,
     name:'카시모 하지메',
-    tier:'',
+    tier:'S',
     role:'single',
+    singleTierId:1,
     image:'https://i.imgur.com/G8wjpPR.jpeg',
     popupImage:'',
     badge:'core',
     badgeText:'SSR Core',
     skills:[
-        ['',''],
-        ['',''],
-        ['',''],
-        ['','']
+        ['[특성] 뇌신인',
+         `<span class="level-text">레벨 1 :</span> 창성추 시전 시 28% 확률로 모든 아군이 8초 동안 총 240의 주력을 회복하며, 대상의 <span class="effect-buff">뇌흔</span> 1중첩마다 확률이 2% 증가한다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 창성추 시전 시 28% 확률로 모든 아군이 8초 동안 총 320의 주력을 회복하며, 대상의 <span class="effect-buff">뇌흔</span> 1중첩마다 확률이 4% 증가한다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 창뢰성추 시전 시 28% 확률로 모든 아군이 8초 동안 총 400의 주력을 회복하며, 대상의 <span class="effect-buff">뇌흔</span> 1중첩마다 확률이 6% 증가한다.
+         <br><br>
+         <span class="level-text">레벨 4 :</span> <span class="effect-buff">뇌흔</span> 1겹마다 모든 아군의 공격에 2%의 치명타 확률 이 추가로 붙습니다.<br>자신이 치명타 시 모든 아군의 치명타 피해가 4% 증가하고, 3초 동안 지속되며, 최대 10겹 중첩됩니다`],
+        ['[스킬 1] 창뢰성추',
+         `<span class="level-text">레벨 1 :</span> 한번에 대량의 전하를 방출해 뇌전 구체를 형성하여 적을 공격하고, 단일 적에게 6회 160% 공격력의 피 해를 입힙니다.<br>타깃이 보유한 <span class="effect-buff">뇌흔</span><br> 1겹마다 해당 스킬에 추가로 5%의 치명타 확률 및 5%의 치명타 피해가 적용됩니다.
+        <br><br>
+        <span class="level-text">레벨 2 :</span> 매회 피해량이 공격력의 190%로 증가한다.
+        <br><br>
+        <span class="level-text">레벨 3 :</span> 매회 피해량이 공격력의 220%로 증가합니다.<br>스킬 종료 시 자신의 치명타 확률이 10% 증가하고, 치명타 피해가 10% 증가하며, 15초 동안 지속되고, 최대로 3겹 중첩`],
+        ['[스킬 2] 신뇌격',
+         `<span class="level-text">레벨 1 :</span> 저장된 전하를 전방으로 방출하여 대상 적에게 280 % 공격력의 피해를 입히고, 대상의 치명타 저항이 15% 감소하며, 6초간 지속된다.<br>해당 디버프 효과가 존재할때 아군이 대상에게 치명타 시 <span class="effect-buff">뇌흔</span>을 부여하 고, 추가로 30의 주력을 획득하며, 해당 효과는 0.6 초마다 1회만 발동한다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 피해량이 공격력 350%로 증가한다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 피해량이 공격력의 400%로 증가하고, 아군이 치명 타 시 획득한 주력이 40pt로 증가합니다`],
+        ['[스킬 3] 뇌의 주술',
+         `<span class="level-text">레벨 1 :</span> HP 20% 증가, 공격력 40% 증가
+         <br><br>
+         <span class="level-text">레벨 2 :</span> HP 30% 증가, 공격력 60% 증가
+         <br><br>
+         <span class="level-text">레벨 3 :</span> HP 40% 증가, 공격력 80% 증가`],
+        ['[스킬 4] 뇌흔',
+         `<span class="level-text">레벨 1 :</span> 전투 중 자신의 치명타 확률이 15% 증가합니다. 치명타 시 적에게 1겹의 <span class="effect-buff">뇌흔</span>을 부여합니다.
+        <br><br>
+        <span class="level-text">레벨 2 :</span> 전투 중 자신의 치명타 확률이 20% 증가합니다.
+        <br><br><hr><br>
+        <span class="effect-buff">뇌흔</span><br>1겹당 적이 주는 피해가 5% 감소하고 자 신이 대상을 공격 시 4%의 추가 치명타 확 률이 붙으며, 최대 12겹까지 중첩됩니다.`]
     ]
 },
 {
@@ -570,10 +627,44 @@ const characters = [
     badge:'core',
     badgeText:'SSR Core',
     skills:[
-        ['',''],
-        ['',''],
-        ['',''],
-        ['','']
+        ['[특성] 우주환영',
+         `<span class="level-text">레벨 1 :</span> 일반 공격 시 (우수라단 발동 확률/발사 수)와 동일한 확률로 한 번에 최대 2개의 우수라단을 발사한다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span>  일반 공격 시 (우수라단 발동 확률/발사 수)와 동일한 확률로 한 번에 최대 3개의 우수라단을 발사한다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 일반 공격 시 (우수라단 발동 확률/발사 수)와 동일한 확률로 한 번에 최대 4개의 우수라단을 발사한다.
+         <br><br>
+         <span class="level-text">레벨 4 :</span> 자신의 생명력이 처음으로 70%, 40%, 15% 미만으 로 감소 시 즉시 오로라 허계를 1회 시전한다.<br> 해당 효 과는 0.5초마다 최대 1회 발동한다`],
+      
+        ['[스킬 1] 오로라 허계',
+         `<span class="level-text">레벨 1 :</span> 영역을 전개하여 적 전체에게 공격력의 400%만큼 피해를 입히고, 동시에 자신의 공격력의 600%만큼 자신을 제외한 아군의 생명력을 회복시킨다.<br> 첫 시전 시 10초 동안 자신의 급속이 50% 증가한다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 피해량이 공격력의 500%로 증가하고, 치료량이 공 격력의 700%로 증가합니다.
+         <br><br>
+         <span class="level-text">레벨 3</span> : 피해량이 공격력의 600%로, 치유량이 공격력의 800%로 증가한다.<br> 동시에 아군 전체의 공격력을 15 % 증가시키고 적 전체의 공격력을 15% 감소시키며, 해당 효과는 8초 동안 지속된다`],
+      
+        ['[스킬 2] 우수라단',
+         `<span class="level-text">레벨 1 :</span>
+         일반 공격이 30%의 확률로 목표에게 우수라탄을 발사하도록 변경된다.<br> 우수라탄은 일직선상의 모든 적에게 공격력의 200%만큼 피해를 입히고, 범위 내 아군의 생명력을 공격력의 200%만큼 회복시킨다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span>
+         기본 확률이 36%로 증가한다.<br>
+         우수라탄은 적에게 부여된 치유형 버프 효과를 1개 해제한다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span>
+         우수라탄이 1회 발동될 때마다 우수라탄의 최종 피해량 및 치유량이 5% 증가하며, 최대 100%까지 증가한다`
+],
+        ['[스킬 3] 천공의 그림자',`<span class="level-text">레벨 1 :</span> HP 20% 증가, 공격력 40% 증가
+        <br><br>
+        <span class="level-text">레벨 2 :</span> HP 30% 증가, 공격력 60% 증가
+        <br><br>
+        <span class="level-text">레벨 3 :</span> HP 40% 증가, 공격력 80% 증가`],
+        ['[스킬 4] 액막이 성력',
+         `<span class="level-text">레벨 1 :</span> 전공 술식을 해방해 아군을 보호하고, 모든 아군에게 <span class="effect-buff">성력 부여</span><br>
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 전투 중 자신의 회피가 10% 증가한다. 회피할 때마 다 5초 동안 가속이 5% 증가하며, 최대 20%까지 증가한다.
+         <br><br><hr><br>
+         <span class="effect-buff">성력 부여</span><br> 여피해형 디버프를 1개 정화한다. 또한 회피 와 명중을 각각 30% 증가시키며, 이 효과 는 6초 동안 지속된다.`]
     ]
 },
 {

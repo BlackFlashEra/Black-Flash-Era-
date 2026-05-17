@@ -460,17 +460,20 @@ header{
         padding:10px;
     }
 
-    .popup-content{
-        width:100%;
-        max-width:100%;
-        max-height:92vh;
+.popup-content{
+    width:100%;
+    max-width:100%;
+    max-height:92vh;
 
-        border-radius:20px;
+    border-radius:20px;
 
-        overflow:hidden;
+    overflow-y:auto;
+    overflow-x:hidden;
 
-        background:#000;
-    }
+    background:#000;
+
+    -webkit-overflow-scrolling:touch;
+}
 
     /* 모바일 팝업 이미지 */
 
@@ -665,8 +668,26 @@ header{
 
 .skill-box.open .skill-desc{
 
-    max-height:300px;
+    max-height:1000px;
 
     padding:0 18px 18px;
 
 }
+
+.level-text{
+
+    color:#ffd84d;
+
+    font-weight:800;
+
+}
+
+.effect-buff{
+    color:#7df9ff;
+  
+    font-weight:800;
+  
+    font-size:18px;
+
+    text-shadow:
+    0 0 8px rgba(255,216,77,0.35);
