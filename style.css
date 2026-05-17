@@ -459,32 +459,50 @@ header{
     font-size:13px;
 }
 
-.footer-kakao{
+.footer-sns{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+
+.footer-btn{
     display:flex;
     align-items:center;
-    justify-content:center;
-    gap:8px;
+    gap:6px;
 
     padding:10px 14px;
-    background:#1d1d1d;
     border-radius:12px;
 
-    color:#fff;
     text-decoration:none;
-
     font-size:14px;
     font-weight:700;
+
+    color:#fff;
+    background:#1d1d1d;
 
     transition:0.2s;
 }
 
-.footer-kakao:hover{
+.footer-btn img.sns-icon{
+    width:18px;
+    height:18px;
+}
+
+/* hover */
+.footer-btn:hover{
     background:#2b2b2b;
 }
 
-.kakao-icon{
-    width:18px;
-    height:18px;
+/* 카카오 */
+.footer-btn.kakao{
+    border:1px solid #ff3b3b;
+}
+
+/* 디스코드 */
+.footer-btn.discord{
+    border:1px solid #5865F2;
 }
 
 .footer-copy{
@@ -767,4 +785,3 @@ header{
     justify-content:center;
     width:100%;
 }
-
