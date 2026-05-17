@@ -1124,7 +1124,14 @@ function showPage(pageId, button){
     });
 
     button.classList.add('active');
+    
+window.scrollTo({
 
+        top: 0,
+
+        behavior: 'smooth'
+
+    })
 }
 
 /* =========================
