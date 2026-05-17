@@ -457,15 +457,15 @@ header{
     /* 모바일 팝업 카드 느낌 */
 
     .popup{
-        padding:10px;
+        padding:8px;
     }
 
 .popup-content{
     width:100%;
     max-width:100%;
-    max-height:92vh;
+    max-height:90vh;
 
-    border-radius:20px;
+    border-radius:16px;
 
     overflow-y:auto;
     overflow-x:hidden;
@@ -490,11 +490,11 @@ header{
     }
 
     .popup-body{
-        padding:18px;
+        padding:12px;
     }
 
     .popup-title{
-        font-size:26px;
+        font-size:22px;
     }
 
     .skill-grid{
@@ -651,14 +651,19 @@ header{
 }
 
 .skill-desc{
+    font-size:13px;
 
+    line-height:1.5;
+
+    word-break:keep-all;
+
+    overflow-wrap:break-word;
+  
     max-height:0;
 
     overflow:hidden;
 
     padding:0 18px;
-
-    line-height:1.7;
 
     transition:0.25s ease;
 
@@ -670,7 +675,7 @@ header{
 
     max-height:1000px;
 
-    padding:0 18px 18px;
+    padding:0 12px 12px;
 
 }
 
@@ -687,7 +692,7 @@ header{
   
     font-weight:800;
   
-    font-size:18px;
+    font-size:14px;
 
     text-shadow:
     0 0 8px rgba(255,216,77,0.35);
