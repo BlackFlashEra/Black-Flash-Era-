@@ -89,7 +89,7 @@ const characters = [
          <br><br>
          <span class="level-text">레벨 3 :</span> 단일 기본 피해량이 공격력의 100%로 증가합니다.`],
         ['[스킬 2] 주술•창',
-         `<span class="level-text">레벨 1 :</span> 적의 뒤에 나타나 대상에게 3회 80% 공격력의 물리 피해를 입히고, 영역전개 상태에 있을 때, 자신에게 20겹 신성이 있을 때마다 1개 대상을 추가로 증가합니다.
+         `<span class="level-text">레벨 1 :</span> 적의 뒤에 나타나 대상에게 3회 80% 공격력의 물리 피해를 입히고, 영역전개 상태에 있을 때, 자신에게 20겹 <span class="effect-buff">신성</span>이 있을 때마다 1개 대상을 추가로 증가합니다.
          <br><br>
          <span class="level-text">레벨 2 :</span> 단일 피해량이 공격력 120%로 증가한다.
          <br><br>
