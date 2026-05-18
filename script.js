@@ -612,7 +612,7 @@ const characters = [
     role:'single',
     singleTierId:1,
     image:'https://i.imgur.com/G8wjpPR.jpeg',
-    popupImage:'https://i.imgur.com/hYGEwha',
+    popupImage:'https://i.imgur.com/hYGEwha.jpeg',
     badge:'core',
     badgeText:'SSR Core',
     skills:[
