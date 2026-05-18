@@ -106,6 +106,58 @@ const characters = [
          <span class="level-text">레벨 2 :</span> 피해량이 공격력 240%로 증가한다.`]
     ]
 },
+
+{
+    id:2.1,
+    tierId:2.1,
+    name:'천여폭군',
+    tier:'GOD',
+    role:'aoe',
+    aoeTierId:2,
+    image:'https://i.imgur.com/hdIcnM5.jpeg',
+    popupImage:'https://i.imgur.com/IYA7ZvA.jpeg',
+    badge:'ur',
+    badgeText:'UR',
+    skills:[
+        ['[특성] 천여폭군',
+         `<span class="level-text">레벨 1 :</span> 자신의 HP가 20% 감소할 때마다, 자신의 치명타 피 해량이 15% 증가하고, 일반 공격을 발동할 때, 공격 력 100%의 보호막을 획득하며, 3초 동안 지속됩니다.<br>해당 보호막은 중첩하지 않습니다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 자신의 HP가 15% 감소할 때마다, 자신의 치명타 피 해량이 15% 증가하고, 일반 공격을 발동할 때, 공격 력 100%의 보호막을 획득하며, 3초 동안 지속됩니다.<br>해당 보호막은 중첩하지 않습니다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 자신의 HP가 10% 감소할 때마다, 자신의 치명타 피 해량이 15% 증가하고, 일반 공격을 발동할 때, 공격 력 100%의 보호막을 획득하며, 3초 동안 지속됩니다.<br>해당 보호막은 중첩하지 않습니다.
+         <br><br>
+         <span class="level-text">레벨 4 :</span> HP가 50% 이하일 때 자신 최대HP 6%의 고정피해를 추가로 입힙니다.`],
+        ['[스킬 1] 종언·석혼단마참',
+         `<span class="level-text">레벨 1 :</span> 석혼과 용골 쌍칼을 휘두르며, 공격력이 가장 높은 적 에게 돌진하여, 연속적인 넓은 범위의 참격을 가하여, 총 900% 공격력의 피해를 입히고, 시전 시 자신 50 %의 현재 HP를 소모합니다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 피해 총량이 1350%로 증가합니다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 시전 완료 후, 자신 총 피해량 35%의 HP를 회복합니다.`],
+        ['[스킬 2] 쇄공 열참',
+         `<span class="level-text">레벨 1 :</span> 궁극의 힘으로 공간을 파괴하여 전방의 적에게 공격 력의 200% 피해를 입히고 2초간 기절시키며, 시전 중 <span class="effect-buff">슈퍼 아머</span> 상태가 되고 필드 위의 모든 대상에게 <span class="effect-buff">영혼 봉인</span> 효과를 부여하며, 시전 시 현재 HP의 15%를 소모합니다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 피해량이 공격력 240%로 증가한다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 피해량이 공격력 280%로 증가한다.
+         <br><br><hr><br>
+         <span class="effect-buff">슈퍼 아머</span> 모든 제어 효과 및 다운 면역
+         <br><br>
+         <span class="effect-buff">영혼 봉인</span> 모든 스킬 시전을 차단하지만, 일반 공격 및 현재 시전 중인 스킬은 중단하지 않음`],
+        ['[스킬 3] 천여주박',
+         `<span class="level-text">레벨 1 :</span> HP 20% 증가, 공격력 40% 증가
+         <br><br>
+         <span class="level-text">레벨 2 :</span> HP 30% 증가, 공격력 60% 증가
+         <br><br>
+         <span class="level-text">레벨 3 :</span> HP 40% 증가, 공격력 80% 증가`],
+        ['[스킬 4] 석혼 영역',
+         `<span class="level-text">레벨 1 :</span> 치명피해를 받을 시, 자신의 모든 디버프 효과를 제거하고 6초의 <span class="effect-buff">체력 고정</span> 효과를 획득합니다.<br><span class="effect-buff">체력 고정</span> 효과가 사라질 때 자신 35%의 HP를 회복하고, 한 전투당 1회 발동합니다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> <span class="effect-buff">체력 고정</span> 효과의 지속 시간이 8초로 연장되고, 해제불가로 변경됩니다.
+         <br><br><hr><br>
+         <span class="effect-buff">체력 고정</span> HP는 1pt 아래로 떨어지지 않습니다.`]
+    ]
+},
+  
 /* =========================
    SSR 핵심 캐릭터 정보
 ========================= */
@@ -560,7 +612,7 @@ const characters = [
     role:'single',
     singleTierId:1,
     image:'https://i.imgur.com/G8wjpPR.jpeg',
-    popupImage:'',
+    popupImage:'https://i.imgur.com/hYGEwha',
     badge:'core',
     badgeText:'SSR Core',
     skills:[
@@ -623,7 +675,7 @@ const characters = [
     tier:'S',
     role:'healer',
     image:'https://i.imgur.com/5UKVZCH.jpeg',
-    popupImage:'',
+    popupImage:'https://i.imgur.com/TzWD3mt.jpeg',
     badge:'core',
     badgeText:'SSR Core',
     skills:[
