@@ -114,8 +114,8 @@ const characters = [
     tier:'GOD',
     role:'aoe',
     aoeTierId:2,
-    image:'https://i.imgur.com/hdIcnM5.jpeg',
-    popupImage:'https://i.imgur.com/IYA7ZvA.jpeg',
+    image:'https://i.imgur.com/jkXSlfy.jpeg',
+    popupImage:'https://i.imgur.com/4XLmDlj.jpeg',
     badge:'ur',
     badgeText:'UR',
     skills:[
@@ -612,7 +612,7 @@ const characters = [
     role:'single',
     singleTierId:1,
     image:'https://i.imgur.com/G8wjpPR.jpeg',
-    popupImage:'https://i.imgur.com/hYGEwha.jpeg',
+    popupImage:'https://i.imgur.com/4BMxZXV.jpeg',
     badge:'core',
     badgeText:'SSR Core',
     skills:[
