@@ -290,7 +290,7 @@ const characters = [
 },
 {
     id:11,
-    tier:11,
+    tierId:11,
     name:'하카리 킨지',
     tier:'S',
     role:'support',
@@ -306,8 +306,8 @@ const characters = [
     ]
 },
 {
-    id:11,
-    tierId:11,
+    id:11.1,
+    tierId:11.1,
     name:'후시구로 토우지',
     tier:'SS',
     role:'tank',
@@ -482,7 +482,7 @@ const characters = [
 },
 {
     id:24,
-    tier:24,
+    tierId:24,
     name:'젠인 나오비토',
     tier:'C',
     role:'single',
@@ -714,16 +714,65 @@ const characters = [
         ['[스킬 4] 액막이 성력',
          `<span class="level-text">레벨 1 :</span> 전공 술식을 해방해 아군을 보호하고, 모든 아군에게 <span class="effect-buff">성력 부여</span><br>
          <br><br>
-         <span class="level-text">레벨 2 :</span> 전투 중 자신의 회피가 10% 증가한다. 회피할 때마 다 5초 동안 가속이 5% 증가하며, 최대 20%까지 증가한다.
+         <span class="level-text">레벨 2 :</span> 전투 중 자신의 회피가 10% 증가한다. 회피 할때마다 5초 동안 가속이 5% 증가하며, 최대 20%까지 증가한다.
          <br><br><hr><br>
          <span class="effect-buff">성력 부여</span><br> 여피해형 디버프를 1개 정화한다. 또한 회피 와 명중을 각각 30% 증가시키며, 이 효과 는 6초 동안 지속된다.`]
     ]
 },
 {
+    id:'4.1',
+    tierId:'4.1',
+    name:'쿠루스 하나',
+    tier:'SS',
+    role:'healer',
+    healerTierId:1,
+    image:'https://i.imgur.com/PDa3LfQ.jpeg',
+    popupImage:'https://i.imgur.com/DuyHytT.jpeg',
+    badge:'core',
+    badgeText:'SSR Core',
+    skills:[
+        ['[특성] 래더',
+         `<span class="level-text">레벨 1 :</span> 자신이 빛의 고치 상태일 때, 매초 모든 적에게 공격력의 50%만큼 피해를 줍니다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 부활 시 모든 아군에게 쿠루스 하나 공격력의 200%만큼 생명력을 회복시킵니다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 자신이 빛의 고치 상태일 때, 모든 적의 공격력을 15 % 감소시킵니다.
+         <br><br>
+         <span class="level-text">레벨 4 :</span> 기본 부활 시간이 8초로 감소합니다. 자신이 빛의 고치 상태일때 어느 한쪽 캐릭터가 전투에서 패배하면, 자신의 부활 남은 시간이 절반으로 감소하고, 부활 시간은 최소 4초 미만으로 떨어지지 않습니다.`],
+        ['[스킬 1] 신광 보조',
+         `<span class="level-text">레벨 1 :</span> 성광 결계를 펼쳐, 4초 동안 모든 적에게 6회에 걸쳐 공격력의 120%에 해당하는 피해를 주고, 모든 아군이 이후 8초 동안 받는 피해를 35% 감소시키며, 생명력이 가장 낮은 아군을 4회 치료하며 매번 래서화 공격력의 100% 만큼 생명력을 회복시킵니다.<br> 시전중 자신은 피해 및 제어효과에 면역됩니다.
+        <br><br>
+        <span class="level-text">레벨 2 :</span> 매번 피해량이 공격력의 150%로 증가하고, 동시에 생명력이 가장 낮은 아군 2명을 치유합니다.
+        <br><br>
+        <span class="level-text">레벨 3 :</span> 공격 시 피해량이 공격력의 180%로 증가하고 대상 의 버프 효과 1개를 해제하며, 치유 시마다 쿠루스 하 나를 추가로 치유하고 대상의 디버프 효과 1개를 정 화합니다.`],
+        ['[스킬 2] 찬란한 별의 강림',
+         `<span class="level-text">레벨 1 :</span> 현재 생명력의 10%를 소모하여 빛의 혜성을 소환해 대상을 강타하며, 대상에게 공격력의 280% 피해를 입히고, 대상과 그 주변의 좁은 범위 내 모든 적에게 공격력의 200% 피해를 입힙니다.
+         <br><br>
+         <span class="level-text">레벨 2 :</span> 혜성이 목표 위치에 6초 동안 지속되는 플레어를 남기며, 플레어 안의 적들에게 매초 쿠루스 하나 공격력 의 100% 피해를 줍니다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 혜성은 주요 대상에게 추가로 쿠루스 하나 최대 생명력의 10%에 해당하는 고정피해를 입히고, 3초 동안 <span class="effect-buff">스킬 제한</span> 상태를 부여합니다.
+         <br><br><hr><br>
+         <span class="effect-buff">스킬 제한</span> 현재 스킬을 중단시키며, 상태 지속 중에는 모든 스킬 사용이 금지됩니다.`],
+        ['[스킬 3] 천사 빙의',
+         `<span class="level-text">레벨 1 :</span> HP 40% 증가, 공격력 20% 증가
+         <br><br>
+         <span class="level-text">레벨 2 :</span> HP 60% 증가, 공격력 30% 증가
+         <br><br>
+         <span class="level-text">레벨 3 :</span> HP 80% 증가, 공격력 40% 증가`],
+        ['[스킬 4] 성약의 고치',
+         `<span class="level-text">레벨 1 :</span> 라이치화가 전투에서 패배하면 빛의 고치가 된다. 12 초 후 라이치화는 고치에서 부활하여 100%의 생명력을 회복하고, 주변 적에게 200% 공격력의 피해를 입힌다. 매 부활마다 이후 부활 시간이 2초 증가한다.<br> 빛의 고치 상태에서는 자신이 생존 영웅으로 간주되지 않으며, 어떤 스킬효과의 영향도 받지 않는다.
+         <br><br>
+         <span class="level-text">레벨 3 :</span> 부활 시 주변 적에게 주는 피해가 240%로 증가하고,2초 기절을 부여합니다.`]
+    ]
+},
+{
+    id:'',
+    tierId:'',
     name:'',
     tier:'',
     role:'',
     image:'',
+    popupImage:'',
     badge:'',
     badgeText:'',
     skills:[
@@ -1337,3 +1386,195 @@ window.filterRole = function(role, button){
     });
 
 };
+
+/* =========================
+   MATERIAL DATA
+========================= */
+
+const materialData = {
+
+    ur:{
+
+        title:'성급업 재료',
+        sub:'(UR 기준)',
+
+        rows:[
+
+            ['6성','본인 2개 + 아무 6성 2개'],
+            ['7성','아무 6성 2개'],
+            ['8성','아무 6성 4개'],
+            ['9성','본인 1개 + 아무 9성 2개'],
+            ['10성','본인 2개 + 아무 9성 2개'],
+            ['11성','본인 6성 1개 + 아무 9성 2개'],
+            ['12성','6성 2개 + 아무 9성 2개']
+
+        ],
+
+        summaryTitle:'9성 1개 만드는 데 필요한 재료',
+        summary1:'본인 3개 + 동일속성 재료 26개',
+        summary2:'→ 총 5성 29개 필요'
+
+    },
+
+    ssr:{
+
+        title:'성급업 재료',
+        sub:'(SSR 기준)',
+
+        rows:[
+
+            ['6성','본인 2개 + 동일속성 4개'],
+            ['7성','동일속성 4개'],
+            ['8성','동일속성 6성 1개 + 동일속성 4개'],
+            ['9성','본인 1개 + 동일속성 6성 1개 + 동일속성 2개'],
+            ['10성','본인 2개 + 아무 9성 1개'],
+            ['11성','본인 6성 1개 + 9성 1개'],
+            ['12성','본인 6성 2개']
+
+        ],
+
+        summaryTitle:'9성 1개 만드는 데 필요한 재료',
+        summary1:'본인 3개 + 동일속성 재료 26개',
+        summary2:'→ 총 5성 29개 필요'
+
+    }
+
+};
+
+/* =========================
+   MATERIAL CREDIT TEXT
+========================= */
+
+let creditText = "";
+
+function setCreditText(type){
+
+    if (type === "ur") {
+        creditText = "UR 재료 정리 made by 가드";
+    } 
+    else if (type === "ssr") {
+        creditText = "SSR 재료 정리 made by 스님";
+    }
+}
+
+/* =========================
+   MATERIAL RENDER
+========================= */
+
+function renderMaterial(type){
+
+    setCreditText(type);
+
+    const page =
+    document.getElementById('materialPage');
+
+    const data = materialData[type];
+
+    let rows = '';
+
+    data.rows.forEach(row=>{
+
+        rows += `
+
+        <div class="material-row">
+
+            <div class="material-grade">
+                ${row[0]}
+            </div>
+
+            <div class="material-desc">
+                ${row[1]}
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+    page.innerHTML = `
+
+    <div class="material-ui ${type}">
+
+        <div class="material-main-title">
+            ${data.title}
+        </div>
+
+        <div class="material-sub-title">
+            ${data.sub}
+        </div>
+
+        <div class="material-head ${type}">
+
+            <div>성급</div>
+            <div>재료</div>
+
+        </div>
+
+        <div class="material-list ${type}">
+
+            ${rows}
+
+        </div>
+
+        <div class="material-summary">
+
+            <div class="summary-title ${type}">
+                ▶ ${data.summaryTitle}
+            </div>
+
+            <div class="summary-text">
+                ${data.summary1}
+            </div>
+
+            <div class="summary-text blue">
+                ${data.summary2}
+            </div>
+
+        </div>
+        
+        <div class="material-credit">
+          ${creditText}
+        </div>
+        
+    </div>
+
+    `;
+
+}
+/* =========================
+   CHARACTER FILTER
+========================= */
+
+function showCharacterContent(type, button){
+
+    document.querySelectorAll('.character-btn')
+    .forEach(btn=>btn.classList.remove('active'));
+
+    button.classList.add('active');
+
+    const characterGrid =
+    document.getElementById('characterGrid');
+
+    const materialPage =
+    document.getElementById('materialPage');
+
+    // 캐릭터 목록
+    if(type === 'character'){
+
+        characterGrid.style.display = 'grid';
+
+        materialPage.classList.remove('active');
+
+        return;
+
+    }
+
+    // 재료 페이지
+    characterGrid.style.display = 'none';
+
+    materialPage.classList.add('active');
+
+    renderMaterial(type);
+
+}

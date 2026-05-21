@@ -45,8 +45,32 @@
 
 <div class="page active" id="character-page">
 
-    <!-- 자동 생성 -->
+    <!-- CHARACTER FILTER -->
+
+    <div class="character-filter">
+
+        <button class="character-btn active"
+        onclick="showCharacterContent('character', this)">
+            캐릭터
+        </button>
+
+        <button class="character-btn"
+        onclick="showCharacterContent('ur', this)">
+            UR 성급 재료
+        </button>
+
+        <button class="character-btn"
+        onclick="showCharacterContent('ssr', this)">
+            SSR 성급 재료
+        </button>
+
+    </div>
+
+    <!-- 캐릭터 목록 -->
     <div class="character-grid" id="characterGrid"></div>
+
+    <!-- 재료 페이지 -->
+    <div class="material-page" id="materialPage"></div>
 
 </div>
 
@@ -161,8 +185,6 @@
 
 </div>
 
-<script src="script.js"></script>
-
 <footer class="footer">
 
     <div class="footer-inner">
@@ -177,7 +199,8 @@
             <!-- DISCORD -->
             <a class="footer-btn discord"
                href="https://discord.gg/xYAcG65mXu"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
 
                 <img class="sns-icon"
                      src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"
@@ -190,7 +213,8 @@
             <!-- KAKAO -->
             <a class="footer-btn kakao"
                href="https://open.kakao.com/o/gXcLKUti"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
 
                 <img class="sns-icon"
                      src="https://cdn-icons-png.flaticon.com/512/2111/2111466.png"
@@ -210,5 +234,7 @@
 
 </footer>
 
+<script src="script.js"></script>
+  
 </body>
 </html>
