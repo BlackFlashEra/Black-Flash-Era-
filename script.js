@@ -1562,19 +1562,20 @@ function showCharacterContent(type, button){
     // 캐릭터 목록
     if(type === 'character'){
 
-        characterGrid.style.display = 'grid';
-
-        materialPage.classList.remove('active');
+        if(characterGrid) characterGrid.style.display = 'grid';
+        if(materialPage) materialPage.style.display = 'none'; // 안전하게 display로 숨김
 
         return;
 
     }
 
-    // 재료 페이지
-    characterGrid.style.display = 'none';
+    // 재료 페이지 (UR, SSR 성급 재료 클릭 시)
+    if(characterGrid) characterGrid.style.display = 'none'; // 캐릭터 그리드 숨김
+    if(materialPage) {
+        materialPage.style.display = 'block'; // 재료 페이지 표시
+    }
 
-    materialPage.classList.add('active');
-
+    // 기존 데이터 바인딩 함수 실행 (언어 번역 로직이 들어간 함수)
     renderMaterial(type);
 
 }
