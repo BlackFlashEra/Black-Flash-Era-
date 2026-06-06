@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>BLACK FLASH ERA</title>
-    <meta name="description" content="BLACK FLASH ERA — built on Replit. Update this description to reflect the app." />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="BLACK FLASH ERA" />
-    <meta property="og:description" content="BLACK FLASH ERA — built on Replit. Update this description to reflect the app." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="BLACK FLASH ERA" />
-    <meta name="twitter:description" content="BLACK FLASH ERA — built on Replit. Update this description to reflect the app." />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" src="./script.js"></script>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BLACK FLASH ERA — 주술회전 모바일 게임 캐릭터 정보 및 티어리스트">
+  <title>BLACK FLASH ERA</title>
+
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--
+    #app: JavaScript가 전체 UI를 렌더링하는 마운트 포인트
+    script.js의 render() 함수가 이 요소 안을 채운다.
+  -->
+  <div id="app"></div>
+
+  <!-- 데이터 파일 (script.js 보다 먼저 로드해야 한다) -->
+  <script src="character.js"></script>
+  <script src="material.js"></script>
+
+  <!-- UI 로직 -->
+  <script src="script.js"></script>
+</body>
 </html>
