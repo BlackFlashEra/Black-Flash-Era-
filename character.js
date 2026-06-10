@@ -442,7 +442,7 @@ const characters = [
     tier: "S",
     role: "healer",
     image: "https://i.imgur.com/5UKVZCH.jpeg",
-    popupImage: "https://i.imgur.com/TzWD3mt.jpeg",
+    popupImage: "https://i.imgur.com/gU9COHD.jpeg",
     badge: "core",
     badgeText: "SSR Core",
     skills: [
